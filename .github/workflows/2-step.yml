@@ -60,7 +60,7 @@ jobs:
         env:
           REVIEWER_LOGIN: ${{ github.event.requested_reviewer.login }}
         run: |
-          echo "Copilot is NOT assigned as reviewer."
+          echo "Copilot is assigned as reviewer."
           exit 1
 
       - name: Update comment - step results
